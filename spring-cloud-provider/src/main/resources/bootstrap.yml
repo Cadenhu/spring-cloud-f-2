@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: spring-cloud-provider
+  cloud:
+    config:
+      uri: http://localhost:10002
+      profile: ${spring.profiles.active}
+      label: master
+  profiles:
+    active: dev

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring-auto-server" />
+        <module name="spring-cloud-consumer" />
+        <module name="spring-cloud-f-2" />
+        <module name="spring-cloud-provider" />
+        <module name="spring-config-server" />
+        <module name="spring-eureka-server" />
+        <module name="spring-server-gateway" />
+        <module name="spring-server-zipkin" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring-auto-server" target="1.8" />
+      <module name="spring-cloud-consumer" target="1.8" />
+      <module name="spring-cloud-f-2" target="1.8" />
+      <module name="spring-cloud-provider" target="1.8" />
+      <module name="spring-config-server" target="1.8" />
+      <module name="spring-eureka-server" target="1.8" />
+      <module name="spring-server-gateway" target="1.8" />
+      <module name="spring-server-zipkin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

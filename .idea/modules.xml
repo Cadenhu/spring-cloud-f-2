@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/spring-auto-server/spring-auto-server.iml" filepath="$PROJECT_DIR$/spring-auto-server/spring-auto-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-config/spring-cloud-config.iml" filepath="$PROJECT_DIR$/spring-cloud-config/spring-cloud-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-consumer/spring-cloud-consumer.iml" filepath="$PROJECT_DIR$/spring-cloud-consumer/spring-cloud-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-f-2.iml" filepath="$PROJECT_DIR$/spring-cloud-f-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-cloud-provider/spring-cloud-provider.iml" filepath="$PROJECT_DIR$/spring-cloud-provider/spring-cloud-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-config-server/spring-config-server.iml" filepath="$PROJECT_DIR$/spring-config-server/spring-config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-eureka-server/spring-eureka-server.iml" filepath="$PROJECT_DIR$/spring-eureka-server/spring-eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-server-gateway/spring-server-gateway.iml" filepath="$PROJECT_DIR$/spring-server-gateway/spring-server-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-server-zipkin/spring-server-zipkin.iml" filepath="$PROJECT_DIR$/spring-server-zipkin/spring-server-zipkin.iml" />
+    </modules>
+  </component>
+</project>

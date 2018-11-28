@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      name: user
+      password: 123
+
+eureka:
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    servicesUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+server:
+  port: 10001
+
+logging:
+  level:
+    org:
+      springframework:
+        security: DEBUG
