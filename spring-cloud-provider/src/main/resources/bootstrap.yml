@@ -8,3 +8,7 @@ spring:
       label: master
   profiles:
     active: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:123@localhost:10001/eureka/
