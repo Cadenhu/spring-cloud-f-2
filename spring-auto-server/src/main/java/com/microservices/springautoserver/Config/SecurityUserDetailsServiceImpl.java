@@ -1,13 +1,14 @@
-package com.example.authorizationserverdemo.Security;
+package com.microservices.springautoserver.Config;
 
-import com.example.authorizationserverdemo.Entity.UserDO;
+import com.microservices.springautoserver.Entity.AuthorizationModel;
+import org.springframework.boot.autoconfigure.security.SecurityProperties;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
-
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashSet;
 
@@ -23,8 +24,7 @@ public class SecurityUserDetailsServiceImpl implements UserDetailsService {
         String lowcaseUsername = username.toLowerCase();
         Collection<GrantedAuthority> grantedAuthorities = new HashSet<>();
         grantedAuthorities.add(new SimpleGrantedAuthority("findclient"));
-        UserDO userDO = new UserDO(1, "system", "{bcrypt}$2a$10$7jl/XEtraHjyVX7zsdMz5O9QVs7H5YJkj7BvSfj9DrjWKPVh0qbrS", grantedAuthorities, true);
-
-        return userDO;
+        AuthorizationModel user = new AuthorizationModel("system", "{bcrypt}$2a$10$7jl/XEtraHjyVX7zsdMz5O9QVs7H5YJkj7BvSfj9DrjWKPVh0qbrS", grantedAuthorities, true);
+        return user;
     }
 }

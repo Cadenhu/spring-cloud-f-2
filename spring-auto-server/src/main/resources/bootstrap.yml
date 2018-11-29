@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: spring-auto-server
+  cloud:
+    config:
+      uri: http://localhost:10002
+      profile: ${spring.profiles.active}
+      label: master
+  profiles:
+    active: dev
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:123@localhost:10001/eureka/

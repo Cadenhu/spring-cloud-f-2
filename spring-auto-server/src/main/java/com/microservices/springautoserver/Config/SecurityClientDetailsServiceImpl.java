@@ -1,4 +1,4 @@
-package com.example.authorizationserverdemo.Security;
+package com.microservices.springautoserver.Config;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +17,7 @@ import java.util.HashSet;
  * @Date:Create in 10:48 2018/11/15
  * @Modified By:
  */
+
 public class SecurityClientDetailsServiceImpl implements ClientDetailsService {
 
     private  static  final Logger logger= LoggerFactory.getLogger(SecurityClientDetailsServiceImpl.class);
@@ -40,7 +41,7 @@ public class SecurityClientDetailsServiceImpl implements ClientDetailsService {
         scopes.add("all");
         grantTypes.add("password");
         grantTypes.add("client_credentials");
-        //grantTypes.add("authorization_code");
+        grantTypes.add("authorization_code");
         grantTypes.add("refresh_token");
         baseClientDetails.setScope(scopes);
         baseClientDetails.setAuthorizedGrantTypes(grantTypes);
